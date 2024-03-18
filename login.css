@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Unica One", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+#logo {
+    background: #F6F1F1;
+    width: 40%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25pt;
+    gap: 1vw;
+}
+
+.titulo > img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.campos {
+    display: grid;
+    gap: 3vh;
+}
+
+.campo {
+    font-size: 10pt;
+}
+
+.campo > input {
+    border-radius: 15px;
+    width: 18vw;
+    height: 5vh;
+    border: none;
+}
+
+#login {
+    background: #c9c9c9;
+    width: 60%;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+}
