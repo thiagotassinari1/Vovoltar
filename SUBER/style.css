@@ -1,0 +1,528 @@
+/* configuração do padrão do site - sem margin e padding */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Configuração do header desktop */
+header {
+    width: 92%;
+    height: 15vh;
+    color: white;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+/* Configuração da imagem do header desktop */
+header > img {
+    width: 13%;
+}
+
+ul {
+    font-style: none;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+/* quando o mouse tiver em cima */
+.item_header:hover {
+    border-bottom: 2px solid white;
+    height: 3.5vh;
+    cursor: pointer;
+}
+
+.cadastro_botao_header {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    height: 6vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+/* quando o mouse tiver em cima */
+.cadastro_botao_header:hover {
+    color: white;
+    background-color: #6e6e6e;
+    cursor: pointer;
+}
+
+/* section - quem somos desktop */
+.quem_somos {
+    background-color: white;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+}
+
+/* faz o texto do mobile sumir quando estiver no pc */
+.txt_mobile {
+    display: none;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.texto > h2 {
+    font-size: 30pt;
+}
+
+.texto > p {
+    width: 35vw;
+    text-align: justify;
+}
+
+.aluguel {
+    width: 25%;
+}
+
+/* section - preço baixo desktop */
+.preço_baixo {
+    background-color: rgb(0, 0, 0);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+}
+
+.texto1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.texto1 > h2 {
+    font-size: 30pt;
+}
+
+.texto1 > p {
+    width: 35vw;
+    text-align: justify;
+}
+
+/* faz a foto ajustada para mobile sumir no pc */
+#foto_preço_mobile {
+    display: none;
+}
+
+/* section - nossos produtos desktop */
+.produtos {
+    height: 70vh;
+    background-color: white;
+    text-align: center;
+}
+
+.produtos > h2 {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    font-size: 30pt;
+}
+
+.produtos_opc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+}
+
+.produto {
+    background-color: #F6F1F1;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295); /* x, y, blur, cor */
+} 
+
+.produto > h3 {
+    font-size: 20pt;
+}
+
+.popularft {
+    width: 45%;
+}
+
+.cifraoft {
+    width: 50%;
+}
+
+/* section - cadastro desktop */
+.cadastro {
+    background-color: rgb(0, 0, 0);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto_cadastro {
+    color: white;
+    font-size: 30pt;
+}
+
+.texto2_cadastro {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 10vh;
+}
+
+#cadastro_campos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+#campo {
+    border-radius: 20px;
+    height: 5vh;
+    width: 24vw;
+    padding-left: 1vw;
+    border: none;
+}
+
+#botao_enviar {
+    width: 17vw;
+    height: 6vh;
+    border: none;
+    border-radius: 10px;
+    background-color: #F6F1F1;
+    transition: background-color 0.3s ease;
+}
+
+#botao_enviar:hover {
+    background-color: #6e6e6e;
+    cursor: pointer;
+    color: white;
+}
+
+/* configuração footer desktop */
+footer {
+    height: auto;
+    background-color: black;
+    border-top: 2px solid white;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 10vh;
+}
+
+.icones_config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+
+    width: 20vw;
+}
+
+.icon_footer {
+    filter: invert(100%); /* inverte a cor da imagem */
+    width: 70%;
+}
+
+.icon_footer_internet {
+    filter: invert(100%); /* inverte a cor da imagem */
+    width: 10%;
+}
+
+.idioma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+
+    width: 20vw;
+}
+
+/* layout para iphone xr */
+@media screen and (min-width:414px) and (max-width:590px)  {
+    /* configuração do header mobile */
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    header > img {
+        width: 50%;
+    }
+
+    ul {
+        display: none;
+    }
+
+    /* configuração section mobile - quem somos */
+    .quem_somos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quem_somos > img {
+        width: 40%;
+    }
+
+    .txt_mobile {
+        display: flex;
+    }
+
+    .txt_pc {
+        display: none;
+    }
+
+    .texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .texto > p {
+        width: 90vw;
+    }
+
+    /* configuração section mobile - preço baixo */
+    .preço_baixo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .preço_baixo > img {
+        width: 40%;
+    }
+
+    .texto1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .texto1 > p {
+        width: 90vw;
+    }
+
+    /* faz a foto ajustada pra mobile aparecer */
+    #foto_preço_mobile {
+        display: flex;
+    }
+
+    /* faz a foto ajustada para web sumir */
+    #ft_preço_pc {
+        display: none;
+    }
+
+    /* configuração section - nossos produtos */
+    .produtos_opc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10vh;
+    }
+
+    .produto {
+        width: 80%;
+        height: 20vh;
+        gap: 2vh;
+    }
+
+    .popularft {
+        width: 20%;
+    }
+
+    .cifraoft {
+        width: 22%;
+    }
+
+    /* configuração section mobile - cadastro */
+    #campo {
+        width: 70vw;
+        padding-left: 4vw;
+    }
+
+    #botao_enviar {
+        width: 50vw;
+    }
+
+    .icones_config {
+        width: 30vw;
+        gap: 6vw;
+    }
+
+    .icon_footer {
+        width: 380%;
+    }
+
+    .idioma {
+        width: 45vw;
+    }
+
+    .icon_footer_internet {
+        width: 13%;
+    }
+}
+
+@media screen and (min-width:591px) and (max-width:999px) {
+        /* configuração do header mobile */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+    
+        header > img {
+            width: 20%;
+        }
+    
+        ul {
+            display: none;
+        }
+    
+        /* configuração section mobile - quem somos */
+        .quem_somos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .quem_somos > img {
+            width: 40%;
+        }
+    
+        .txt_mobile {
+            display: flex;
+        }
+    
+        .txt_pc {
+            display: none;
+        }
+    
+        .texto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .texto > p {
+            width: 90vw;
+        }
+    
+        /* configuração section mobile - preço baixo */
+        .preço_baixo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .preço_baixo > img {
+            width: 40%;
+        }
+    
+        .texto1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .texto1 > p {
+            width: 90vw;
+        }
+    
+        /* faz a foto ajustada pra mobile aparecer */
+        #foto_preço_mobile {
+            display: flex;
+        }
+    
+        /* faz a foto ajustada para web sumir */
+        #ft_preço_pc {
+            display: none;
+        }
+    
+        /* configuração section - nossos produtos */
+        .produtos_opc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10vh;
+        }
+    
+        .produto {
+            width: 80%;
+            height: 23 vh;
+            gap: 2vh;
+        }
+    
+        .popularft {
+            width: 20%;
+        }
+    
+        .cifraoft {
+            width: 22%;
+        }
+    
+        /* configuração section mobile - cadastro */
+        #campo {
+            width: 70vw;
+            padding-left: 4vw;
+        }
+    
+        #botao_enviar {
+            width: 50vw;
+        }
+    
+        .icones_config {
+            width: 30vw;
+            gap: 6vw;
+        }
+    
+        .icon_footer {
+            width: 380%;
+        }
+    
+        .idioma {
+            width: 45vw;
+        }
+    
+        .icon_footer_internet {
+            width: 13%;
+        }
+}
