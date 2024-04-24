@@ -1,8 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Unica One", sans-serif;
-    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
 }
 
@@ -67,6 +66,7 @@ body {
 .campo {
     display: flex;
     flex-direction: column;
+    font-weight: bolder;
 }
 
 .enviar {
