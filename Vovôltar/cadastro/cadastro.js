@@ -8,6 +8,10 @@ button.onclick = async function() {
     let senha = document.getElementById('input_senha').value;
     let ConfirmarSenha = document.getElementById('input_confirmar_senha').value;
 
+    // converter formato da data de nascimento
+    let parteData = nascimento.split('/');
+    let dataFormatoDb = parteData[2] + '-' + parteData[1] + '-' + parteData[0];
+
     if (!nome || !email || !telefone || !nascimento || !senha || !ConfirmarSenha) {
         alert('Preencha todos os campos!');
         return false
@@ -21,7 +25,7 @@ button.onclick = async function() {
         alert('Indique uma senha com no mínimo 8 caracteres!')
         return false
     } else {
-        let data = {nome,email,telefone,nascimento,senha}
+        let data = {nome,email,telefone,nascimento: dataFormatoDb,senha}
 
         const response = await fetch('http://localhost:3001/api/store/usuario', {
             method: 'POST',
