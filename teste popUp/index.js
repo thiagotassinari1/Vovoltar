@@ -6,7 +6,7 @@ button.addEventListener('click', function () {
     Swal.fire({
         title: "Deu certo!",
         // text: "fodase fodase.",
-        imageUrl: "./5610944.png",
+        imageUrl: "./check.png",
         imageWidth: 200,
         imageHeight: 200,
         imageAlt: "Custom image",
