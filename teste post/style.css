@@ -1,0 +1,88 @@
+/* Define margem e preenchimento como zero para todos os elementos */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Oculta o contêiner do formulário por padrão */
+.form-container {
+    display: none;
+}
+
+/* Estiliza o popup do formulário */
+.form-popup {
+    position: fixed; /* Define a posição fixa */
+    top: 50%; /* Alinha o topo a 50% da tela */
+    left: 50%; /* Alinha a esquerda a 50% da tela */
+    transform: translate(-50%, -50%); /* Move o popup para o centro da tela */
+    background-color: #f2f2f2; /* Cor de fundo */
+    padding: 20px; /* Preenchimento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    max-width: 400px; /* Largura máxima */
+    width: 100%; /* Largura total */
+    z-index: 9; /* Z-index para estar na frente de outros elementos */
+}
+
+/* Estiliza o título do formulário */
+.form-popup h2 {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estiliza o formulário */
+.form {
+    max-width: 300px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estiliza os campos de entrada e botões */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form button {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Preenchimento interno */
+    margin-bottom: 15px; /* Margem inferior */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* Estiliza o campo de entrada de arquivo */
+.form input[type="file"] {
+    margin-bottom: 20px; /* Margem inferior maior */
+}
+
+/* Estiliza os botões */
+.form button {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Estiliza o botão ao passar o mouse */
+.form button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estiliza o contêiner dos cards */
+.card-container {
+    display: flex; /* Exibe como flexbox */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+}
+
+/* Estiliza cada card */
+.card {
+    background-color: #FFC0CB; /* Cor de fundo rosa */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 20px; /* Preenchimento interno */
+    margin: 10px; /* Margem externa */
+    width: 200px; /* Largura */
+    float: left; /* Alinha um ao lado do outro */
+
+    display: flex; /* Exibe como flexbox */
+    flex-direction: column; /* Direção da coluna */
+    justify-content: center; /* Alinha ao centro verticalmente */
+    gap: 3vh; /* Espaço entre os filhos */
+}
