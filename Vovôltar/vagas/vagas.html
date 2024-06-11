@@ -20,7 +20,61 @@
         <a href="../perfil/perfil.html" class="link_aside">Perfil</a>
     </aside>
     <main>
-        <h1 class="titulo_vaga">Vagas de emprego aqui!</h1>
+        <section class="titulo">
+            <h1 class="titulo_vaga">Vagas de emprego aqui!</h1>
+        </section>
+        <section class="post_vagas">
+            <div class="botoes">
+                <div class="botao_vaga" id="filtrar"> Filtrar </div>
+                <div class="botao_vaga" id="criar_vaga" onclick="openForm"> Criar vaga </div>
+            </div>
+            <div class="vagas">
+                <form class="formulario_vagas" id="formulario_vagas">
+
+                    <h1>Publicar Vaga:</h1>
+
+                    <label class="campo">
+                        Área de atuação  
+                        <input type="text" class="input_campo" id="area_atuacao">
+                    </label>
+        
+                    <label class="campo">
+                        Email para contato
+                        <input type="text" class="input_campo" id="email">                    
+                    </label>
+        
+                    <label class="campo">
+                        Cidade
+                        <input type="text" class="input_campo" id="cidade">                    
+                    </label>
+        
+                    <label class="campo">
+                        Estado
+                        <input type="text" class="input_campo" id="estado">                    
+                    </label>
+
+                    <label class="campo">
+                        Quantidade de vagas
+                        <input type="text" class="input_campo" id="qtd_vagas">                    
+                    </label>
+        
+                    <div class="publicar_cancelar_vaga">
+                        <div class="cancelar_vaga" id="cancelar_vaga">
+                            Cancelar
+                        </div>
+    
+                        <div class="publicar_vaga" id="publicar_vaga">
+                            Publicar vaga
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            
+        </section>
+
     </main>
+
+    <script src="vagas.js"></script>
 </body>
 </html>
