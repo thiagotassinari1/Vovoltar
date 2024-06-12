@@ -1,18 +1,17 @@
 const connection = require('../config/db');
 const dotenv = require('dotenv').config();
 
-async function storeUsuario(request, response) {
+async function storeVaga(request, response) {
     
     const params = Array(
-        request.body.nome,
-        request.body.email,
-        request.body.telefone,
-        request.body.nascimento,
-        request.body.senha,
-        request.body.ft_perfil
+        request.body.area,
+        request.body.email_empresa,
+        request.body.cidade,
+        request.body.estado,
+        request.body.qtd_vagas,
     );
 
-    const query = 'INSERT INTO usuarios(nome,email,telefone,nascimento,senha,ft_perfil) VALUES(?,?,?,?,?,?)';
+    const query = 'INSERT INTO vagas(area,email_empresa,cidade,estado,qtd_vagas) VALUES(?,?,?,?,?)';
 
     connection.query(query, params, (err, results) => {
         if (results) {
@@ -36,5 +35,5 @@ async function storeUsuario(request, response) {
 }
 
 module.exports = {
-    storeUsuario
+    storeVaga
 }
