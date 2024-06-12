@@ -21,3 +21,12 @@ CREATE TABLE empresas (
     endereco VARCHAR(255) NOT NULL,
     senha VARCHAR(255)
 );
+
+create table vagas(
+	id int primary key auto_increment,
+    area varchar(255) not null,
+    email_empresa varchar(255) not null,
+    cidade varchar(255) not null,
+    estado varchar(255) not null,
+    qtd_vagas varchar(100) not null
+);
