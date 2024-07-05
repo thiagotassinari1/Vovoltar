@@ -55,7 +55,7 @@ body {
     width: 100%;
 }
 
-#input_campo {
+.input_campo {
     width: 17vw;
     height: 5vh;
     border: 1px solid black;
