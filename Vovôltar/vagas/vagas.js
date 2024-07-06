@@ -266,6 +266,7 @@ function criarCardVaga(vaga) {
 }
 
 // Função para carregar vagas do servidor
+// Fazer isso com base no video do sor vitor de puxar coisas do banco de dados
 async function carregarVagas() {
     const response = await fetch('http://localhost:3001/api/vagas');
     const content = await response.json();

@@ -3,7 +3,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 
 const cors = require('cors');
-const userRouter = require('./routes/userRouter');
+const userRouter = require('./routes/cadastroPessoaFisicaRouter');
 const vagaRouter = require('./routes/vagaRouter');
 const app = express();
 
