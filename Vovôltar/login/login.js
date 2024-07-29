@@ -22,8 +22,25 @@ logarButton.onclick = async function (e) {
         console.log(content);
 
         if (content.success) {
-            alert('Sucesso no login!');
-            window.location.href = '../home/home.html'
+            Swal.fire({
+                title: "Sucesso no login!",
+                text: "Clique em avançar para prosseguir.",
+                imageUrl: "../assets/check.png",
+                imageWidth: 200,
+                imageHeight: 200,
+                imageAlt: "Custom image",
+                confirmButtonColor: "green",
+                confirmButtonText: "Avançar",
+                customClass: {
+                    popup: 'box_popUp'
+                }
+                
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "../home/home.html";
+                }
+            });
+            // window.location.href = '../home/home.html'
         } else {
             alert('Erro no login, tente novamente!');
         }
