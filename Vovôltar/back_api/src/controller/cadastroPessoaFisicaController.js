@@ -11,7 +11,7 @@ async function storeUsuario(request, response) {
         request.body.ft_perfil
     ];
 
-    const query = 'INSERT INTO usuarios(nome,email,telefone,nascimento,senha,ft_perfil) VALUES(?,?,?,?,?,?)';
+    const query = 'INSERT INTO usuariospf(nome,email,telefone,nascimento,senha,ft_perfil) VALUES(?,?,?,?,?,?)';
 
     connection.query(query, params, (err, results) => {
         if (results) {
@@ -36,7 +36,7 @@ async function Login(request, response) {
         request.body.senha
     ];
     
-    const query = "SELECT email, senha FROM usuarios WHERE email = ? AND senha = ?";
+    const query = "SELECT email, senha FROM usuariospf WHERE email = ? AND senha = ?";
 
     connection.query(query, params, (err, results) => {
         if (results && results.length > 0) {
