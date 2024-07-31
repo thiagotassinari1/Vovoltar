@@ -22,11 +22,12 @@ CREATE TABLE empresas (
     senha VARCHAR(255)
 );
 
-create table vagas(
-	id int primary key auto_increment,
-    area varchar(255) not null,
-    email_empresa varchar(255) not null,
-    cidade varchar(255) not null,
-    estado varchar(255) not null,
-    qtd_vagas varchar(100) not null
+CREATE TABLE vagas(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    area VARCHAR(255) NOT NULL,
+    id_empresa INT NOT NULL,
+    cidade VARCHAR(255) NOT NULL,
+    estado VARCHAR(255) NOT NULL,
+    qtd_vagas VARCHAR(100) NOT NULL,
+    FOREIGN KEY (id_empresa) REFERENCES empresas(id)
 );
